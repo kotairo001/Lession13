@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        let eng = ["book","library","apple","cat","honey","god"];
+        let vn = ["Sách","Thư viện","Táo","Mèo","Mật Ong","Vị Thần"];
+        let a = prompt("Input an English word");
+        // let result = document.getElementById("result").value;
+        for (let i=0;i<6;i++){
+            if (eng[i]==a){
+                document.getElementById("result").innerHTML = (vn[i]);  
+            } 
+            else {
+                document.getElementById("result").innerHTML = ("Your word is not included in ours library");
+                }
+        }
+//if ((eng[i].indexOf(a)==-1))
+    </script>
+</body>
+</html>
