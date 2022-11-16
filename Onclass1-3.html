@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Input your words");
+        var UPPER = "ABCDEFJHIJKLMNOPQRSTUVWXYZ";
+        var lower = 'abcdefjhijklmnopqrstuvwxyz';
+        var result = [];
+        for (i=0;i<a.length;i++) {
+            if (UPPER.indexOf(a[i])!=-1){
+                result.push(a[i].toLowerCase());
+            } else if (lower.indexOf(a[i])!=-1){
+                result.push(a[i].toUpperCase());
+            } else {
+                result.push(a[i]);
+            }
+        }
+        document.write(result.join(''));
+    </script>
+</body>
+</html>
